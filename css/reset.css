@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: none;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    font-style: none;
+    color: #050505;
+}
