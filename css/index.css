@@ -390,6 +390,122 @@ section h2 {
     font-weight: 500;
 }
 
+.portfolio-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 42px;
+    border-radius: 18px;
+    border: none;
+    background: linear-gradient(135deg, #bdc6ff 0%, #a5ebff 100%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 18px 40px rgba(31, 60, 255, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+.more-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 48px rgba(31, 60, 255, 0.24);
+    opacity: 0.95;
+}
+
+.more-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 14px 30px rgba(31, 60, 255, 0.18);
+}
+
+.gallery-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.gallery-card {
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-thumb {
+    width: 100%;
+    height: 240px;
+    background-color: #e8e8ed;
+    overflow: hidden;
+}
+
+.gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-info {
+    padding: 32px;
+}
+
+.gallery-category {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0071e3;
+    letter-spacing: 0.08em;
+}
+
+.gallery-info h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: #1d1d1f;
+}
+
+.gallery-info p {
+    color: #515154;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.gallery-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.gallery-meta span {
+    font-size: 13px;
+    color: #6e6e73;
+}
+
+@media (max-width: 1024px) {
+    .gallery-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-board {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ==========================================================================
    9. 7) Contact 섹션
    ========================================================================== */
